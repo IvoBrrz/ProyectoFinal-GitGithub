@@ -18,8 +18,14 @@ int main() {
         scanf("%d", &opcion);
         switch (opcion) {
             case 1:
-                resultado = sumar(0, 0);
-                printf("Resultado de la suma: \n\n");
+            printf ("Ingrese el 1er numero a sumar: \n");
+            scanf("%d", &num1);
+
+            printf("Ingrese el 2do numero a sumar: \n");
+            scanf("%d", &num2);
+            
+                resultado = sumar(num1, num2);
+                printf("Resultado de la suma: %d \n\n", resultado);
                 break;
 
             case 2:
@@ -28,8 +34,13 @@ int main() {
                 break;
 
             case 3:
+            printf("Ingrese el 1er numero: \n");
+            scanf("%d", &num1);
+            printf("Ingrese el 2do numero: \n");
+            scanf("%d", &num2);
+
                 resultado = multiplicar(num1, num2);
-                printf("Resultado de la multiplicacion: \n\n");
+                printf("Resultado de la multiplicacion: %d\n\n", resultado);
                 break;
             case 4:
                 printf("Saliendo de la calculadora...\n\n");
@@ -43,13 +54,18 @@ int main() {
 }
 
 int sumar(int a, int b) {
-    return 0;
+    int total;
+    total= a + b ;
+    return total;
 }
 
 int restar(int a, int b) {
+
     return 0;
 }
 
 int multiplicar(int a, int b) {
-    return 0;
+    int total;
+    total= a * b;
+    return total;
 }

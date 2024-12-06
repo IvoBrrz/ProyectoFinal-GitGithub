@@ -23,8 +23,12 @@ int main() {
                 break;
 
             case 2:
-                resultado = restar(0, 0);
-                printf("Resultado de la resta: \n\n");
+                printf("Ingrese el 1er numero a restar");
+                scanf("%d",&num1);
+                printf("Ingrese el 2do numero a restar");
+                scanf("%d",&num2);
+                resultado = restar(num1, num2);
+                printf("Resultado de la resta: %d \n\n",resultado);
                 break;
 
             case 3:
@@ -47,6 +51,8 @@ int sumar(int a, int b) {
 }
 
 int restar(int a, int b) {
+    int total;
+    total = a-b;
     return 0;
 }
 
